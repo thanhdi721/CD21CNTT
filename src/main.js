@@ -8,7 +8,7 @@ const route = require('./routes');
 
 const db = require('./config/db');
 // Connect to Database
-db.connect();
+db.connect(); 
 
 app.use(express.static(path.join(__dirname, 'public')));
 
