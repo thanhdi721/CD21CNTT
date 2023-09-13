@@ -30,9 +30,13 @@ class CourseController {
         const course = new Course(formData);
         course.save()
             .then(() => res.redirect('/'))
-            .catch(error =>{
-                
+            .catch(error => {
+
             })
+    }
+    // [GET] /courses/edit
+    edit(req, res, next) {
+        res.render('courses/edit');
     }
 }
 // Export Site

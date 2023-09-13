@@ -8,7 +8,7 @@ const route = require('./routes');
 
 const db = require('./config/db');
 // Connect to Database
-db.connect();
+db.connect(); 
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -22,7 +22,10 @@ app.use(express.json());
 
 // Template engine
 app.engine('hbs', exphbs.engine({
-  extname: '.hbs'
+  extname: '.hbs',
+  helpers: {
+    sum: (a,b) => a+b, // cộng cho số thứ tự của bảng đếm từ 1
+}
 }));
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resource','views'));
