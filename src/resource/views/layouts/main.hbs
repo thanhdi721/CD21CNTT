@@ -13,29 +13,25 @@
 
 <body>
     <div class="app">
-
-        {{> header}}
+        <div class="header fixed-top">
+            {{> header}}
+        </div>
 
         <div class="">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="sidebarLeft col-lg-2 mt-5">
                     {{> sidebarleft}}
                 </div>
-                <div class="col-lg-9">
+                <div class="content col-lg-9 mb-5 mt-5">
                     {{{body}}}
                 </div>
-                {{!-- <div class="sidebarLeft">
-
-                </div>
-                <div class="content">
-
-                </div> --}}
 
             </div>
         </div>
 
-
-        {{> footer}}
+        <div class="footer fixed-bottom">
+            {{> footer}}
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
