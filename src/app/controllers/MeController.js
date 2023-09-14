@@ -11,6 +11,14 @@ class MeController {
         }))
         .catch(next);
     }
+    // [GET] /me/trashCourses/courses
+    trashCourses(req,res,next){
+        Course.findWithDeleted({deleted:true})
+        .then(courses => res.render('me/trash-courses',{
+            courses: mutipleMongooseToObject(courses)
+        }))
+        .catch(next);
+    }
 }
 // Export Site
 module.exports = new MeController();
