@@ -17,17 +17,18 @@
 
 <body>
     <div class="app">
-        <div class="header fixed-top">
+        <div class="header fixed-top ">
             {{> header}}
         </div>
-
         <div class="">
             <div class="row">
-                <div class="sidebarLeft col-lg-3 mt-5">
+                <div class="sidebarLeft fixed-top col-lg-3 mt-5">
                     {{> sidebarleft}}
                 </div>
-                <div class="content col-lg-8 mb-5 mt-5">
-                    {{{body}}}
+                <div class="container mt-4">
+                    <div class="content ml-220 col-lg-8 mb-5 mt-5">
+                        {{{body}}}
+                    </div>
                 </div>
 
             </div>
