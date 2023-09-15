@@ -1,30 +1,52 @@
-@import 'varibles';
-body{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    overflow-x: hidden;
+@import "varibles";
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  overflow-x: hidden;
+  background: #f1efef;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-.card-courses-item{
-    margin-top: 18px;
+a{
+  color: #777777;
 }
-.user-dropdown{
-    display:flex;
+a:hover {
+  text-decoration: none;
 }
-.user-name{
-    margin-left:10px;
+.card-courses-item {
+  margin-top: 18px;
 }
-.header{
-    background: #fff;
-    border-bottom: 1px solid #e9e9e9;
+.user-dropdown {
+  display: flex;
 }
-.checkbox-select-all-options{
-    width: 180px;
+.user-name {
+  margin-left: 10px;
 }
-.container-header{
-    padding: 0 4.5rem;
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e9e9e9;
+}
+.checkbox-select-all-options {
+  width: 180px;
+}
+.container-header {
+  padding: 0 4.5rem;
+}
+.ml-220 {
+  margin-left: 220px;
+}
+.ml-300{
+  margin-left: 300px;
+}
+.ml-6{
+  margin-left: 60px;
+}
+.mt-6{
+  margin-top:60px;
+}
+.sidebarLeft{
+  width:250px;
 }
