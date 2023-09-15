@@ -5,9 +5,13 @@ body {
   padding: 0;
   text-decoration: none;
   overflow-x: hidden;
+  background: #f1efef;
 }
 li {
   list-style: none;
+}
+a{
+  color: #777777;
 }
 a:hover {
   text-decoration: none;
@@ -33,4 +37,16 @@ a:hover {
 }
 .ml-220 {
   margin-left: 220px;
+}
+.ml-300{
+  margin-left: 300px;
+}
+.ml-6{
+  margin-left: 60px;
+}
+.mt-6{
+  margin-top:60px;
+}
+.sidebarLeft{
+  width:250px;
 }
