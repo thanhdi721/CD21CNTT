@@ -1,17 +1,128 @@
 <nav id="sidebar-left" class="navbar navbar-light bg-light">
-    <div class="container">
-        <nav class="nav nav-pills flex-column">
-            <a class="nav-link" href="#item-1">Item 1</a>
-            <nav class="nav nav-pills flex-column">
-                <a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>
-                <a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>
-            </nav>
-            <a class="nav-link" href="#item-2">Item2</a>
-            <a class="nav-link" href="#item-3">Item3</a>
-            <nav class="nav nav-pills flex-column">
-                <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>
-                <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
-            </nav>
-        </nav>
+  <div class="container">
+    {{!-- <nav class="nav nav-pills flex-column">
+      <a class="nav-link dropdown-btn" href="#item-1">Bảng công
+        <i class="fa fa-caret-down"></i></a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-1-1">Bảng công nhân viên</a>
+        <a class="nav-link ml-3 my-1" href="#item-1-2">Cài đặt ngày công</a>
+      </nav>
+      <a class="nav-link" href="#item-2">Đơn từ<i class="fa fa-caret-down"></i></a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-2-1">Danh sách đơn từ</a>
+        <a class="nav-link ml-3 my-1" href="#item-2-2">Chính sách nghỉ phép</a>
+        <a class="nav-link ml-3 my-1" href="#item-2-3">Quy trình duyệt đơn</a>
+        <a class="nav-link ml-3 my-1" href="#item-2-4">Lý do tạo đơn từ</a>
+      </nav>
+      <a class="nav-link" href="#item-3">Quản lý nhân sự<i class="fa fa-caret-down"></i></a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-3-1">Danh sách nhân viên</a>
+        <a class="nav-link ml-3 my-1" href="#item-3-2">Quản lý phép</a>
+        <a class="nav-link ml-3 my-1" href="#item-3-3">Quản lý vai trò</a>
+        <a class="nav-link ml-3 my-1" href="#item-3-4">Quản lý thông tin thu
+          nhập</a>
+        <a class="nav-link ml-3 my-1" href="#item-3-5">Cài đặt tỉ lệ đóng bảo
+          hiểm</a>
+        <a class="nav-link ml-3 my-1" href="#item-3-6">Cài đặt nhận thông báo</a>
+      </nav>
+      <a class="nav-link" href="#item-4">Cài đặt doanh nghiệp<i class="fa fa-caret-down"></i></a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-4-1">Thông tin công ty</a>
+        <a class="nav-link ml-3 my-1" href="#item-4-2">Hệ thống chi nhánh</a>
+        <a class="nav-link ml-3 my-1" href="#item-4-3">Cơ cấu tổ chức</a>
+      </nav>
+      <a class="nav-link" href="#item-5">Cài đặt lịch<i class="fa fa-caret-down"></i></a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-5-1">Ca làm việc</a>
+        <a class="nav-link ml-3 my-1" href="#item-5-2">Phân ca</a>
+        <a class="nav-link ml-3 my-1" href="#item-5-3">Lịch nghĩ lễ</a>
+      </nav>
+      <a class="nav-link" href="#item-6">Cài đặt chấm công<i class="fa fa-caret-down"></i></a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-6-1">Hình thức chấm công</a>
+        <a class="nav-link ml-3 my-1" href="#item-6-2">Chấm công điện thoại</a>
+        <a class="nav-link ml-3 my-1" href="#item-6-3">Chấm công vân tay</a>
+        <a class="nav-link ml-3 my-1" href="#item-6-4">Chấm công khuôn mặt</a>
+      </nav>
+      <a class="nav-link" href="#item-7">Tin tức<i class="fa fa-caret-down"></i></a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-7-1">Danh mục</a>
+        <a class="nav-link ml-3 my-1" href="#item-7-2">Danh sách tin tức</a>
+        <a class="nav-link ml-3 my-1" href="#item-7-3">Phản hồi</a>
+      </nav>
+      <a class="nav-link" href="#item-8">Popup<i class="fa fa-caret-down"></i></a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-8-1">Popup sự kiện</a>
+        <a class="nav-link ml-3 my-1" href="#item-8-2">Popup cá nhân</a>
+      </nav>
+      <a class="nav-link" href="#item-9">Sự kiện<i class="fa fa-caret-down"></i></a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-9-1">Cá nhân</a>
+      </nav>
+      <a class="nav-link" href="#item-10">Tính lương<i class="fa fa-caret-down"></i></a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-10-1">Mẫu bảng lương</a>
+        <a class="nav-link ml-3 my-1" href="#item-10-2">Bảng lương</a>
+        <a class="nav-link ml-3 my-1" href="#item-10-3">Cài đặt chung</a>
+      </nav>
+      <a class="nav-link" href="#item-11">Quản lý khác<i class="fa fa-caret-down"></i></a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-11-1">Cấu hình tích hợp</a>
+        <a class="nav-link ml-3 my-1" href="#item-11-2">Cấu hình lịch làm việc</a>
+      </nav>
+    </nav> --}}
+    <div class="card">
+      <div class="Dropdown-link">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+          aria-controls="collapseOne">
+          Bảng công
+        </button>
+      </div>
+      <div class="collapse show" id="collapseOne">
+        <div class="card-body">
+          <a class="nav-link ml-3 my-1" href="#item-1-1">Bảng công nhân viên</a>
+          <a class="nav-link ml-3 my-1" href="#item-1-2">Cài đặt ngày công</a>
+        </div>
+      </div>
+
+      <div class="Dropdown-link">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+          aria-controls="collapseOne">
+          Bảng công
+        </button>
+      </div>
+      <div class="collapse show" id="collapseOne">
+        <div class="card-body">
+          <a class="nav-link ml-3 my-1" href="#item-1-1">Bảng công nhân viên</a>
+          <a class="nav-link ml-3 my-1" href="#item-1-2">Cài đặt ngày công</a>
+        </div>
+      </div>
+
+      <div class="Dropdown-link">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+          aria-controls="collapseOne">
+          Bảng công
+        </button>
+      </div>
+      <div class="collapse show" id="collapseOne">
+        <div class="card-body">
+          <a class="nav-link ml-3 my-1" href="#item-1-1">Bảng công nhân viên</a>
+          <a class="nav-link ml-3 my-1" href="#item-1-2">Cài đặt ngày công</a>
+        </div>
+      </div>
+
+      <div class="Dropdown-link">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+          aria-controls="collapseOne">
+          Bảng công
+        </button>
+      </div>
+      <div class="collapse show" id="collapseOne">
+        <div class="card-body">
+          <a class="nav-link ml-3 my-1" href="#item-1-1">Bảng công nhân viên</a>
+          <a class="nav-link ml-3 my-1" href="#item-1-2">Cài đặt ngày công</a>
+        </div>
+      </div>
     </div>
+  </div>
 </nav>
