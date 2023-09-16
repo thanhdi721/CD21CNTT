@@ -7,6 +7,6 @@ class NewsController{
     show(req, res){
         res.send('NEWS DETAIL!');
     }
-}
+} 
 // Export News
 module.exports = new NewsController;
