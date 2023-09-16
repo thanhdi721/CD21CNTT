@@ -16,27 +16,8 @@
 </head>
 
 <body>
-    <div class="app">
-        <div class="header fixed-top">
-            {{> header}}
-        </div>
-        <div class="text-secondary">
-            <div class="row">
-                <div class="sidebarLeft fixed-top col-lg-3 mt-5 ">
-                    {{> sidebarleft}}
-                </div>
-                <div class="container mt-4 col-lg-10  ml-300 bg-white">
-                    <div class="content ml-6 mb-5 mt-5 p-3">
-                        {{{body}}}
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="footer fixed-bottom">
-            {{> footer}}
-        </div>
+    <div class="login-container">
+        {{{body}}}
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
