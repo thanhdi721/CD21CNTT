@@ -1,25 +1,32 @@
 <nav class="navbar navbar-expand-lg navbar-light border-bottom">
   <div class="container">
-    <a class="navbar-brand" href="/">KDE courses</a>
+    <div class="logo-header">
+      <a class="navbar-brand" href="/">KDE courses</a>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto dl-flex align-items-center">
+        <li class="Notification-btn mr-4">
+          <i class="fa-1x fa-solid fa-rotate"></i>
+        </li>
+        <li class="resest-btn mr-4">
+          <i class="fa-1x fa-regular fa-bell"></i>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-user" style="color: #f9a52f;"></i>
-            <span class="user-name">Admin</span>
+            <span class="user-name">Thông tin cá nhân</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="/courses/create">Đăng khóa học</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="/me/stored/courses">Khóa học của tôi</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/me/stored/news">Bài viết của tôi</a>
+            <a class="dropdown-item" href="/login">Đăng nhập</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Đăng xuất</a>
           </div>
