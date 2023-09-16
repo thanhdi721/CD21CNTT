@@ -10,7 +10,7 @@ body {
 li {
   list-style: none;
 }
-a{
+a {
   color: #777777;
 }
 a:hover {
@@ -29,7 +29,7 @@ a:hover {
   background: #fff;
   border-bottom: 1px solid #e9e9e9;
 }
-.sidebarLeft{
+.sidebarLeft {
   position: fixed;
   left: 0;
   z-index: 1020;
@@ -43,15 +43,17 @@ a:hover {
 .ml-220 {
   margin-left: 220px;
 }
-.ml-300{
+.sidebarLeft {
+  height: 90%;
+  overflow: scroll;
+  width: 250px;
+}
+.ml-300 {
   margin-left: 300px;
 }
-.ml-6{
+.ml-6 {
   margin-left: 60px;
 }
-.mt-6{
-  margin-top:60px;
-}
-.sidebarLeft{
-  width:250px;
+.mt-6 {
+  margin-top: 60px;
 }
