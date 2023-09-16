@@ -36,6 +36,7 @@ app.engine('hbs', exphbs.engine({
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resource','views'));
 
+
 // Routes init
 route(app);
 
