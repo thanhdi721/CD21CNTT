@@ -22,7 +22,6 @@ module.exports = {
           const result = `<a href="${href}">
             <i class="${icon}"></i>
           </a>`;
-          
           return new Handlebars.SafeString(result);
         }
 };
