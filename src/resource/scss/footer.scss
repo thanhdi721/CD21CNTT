@@ -1,11 +1,25 @@
-.card .card-footer{
-    height: 60px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #fff;
-    background-color: aquamarine;
-    background: red;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
+#footer{
+    padding: 60px 16px;
+    text-align: center;
+}
+#footer .socials-list{
+    font-size: 24px;
+
+}
+#footer .socials-list a{
+    color: rgba(0,0,0, 0.6);
+    text-decoration: none;
+}
+#footer .copyright a:hover,
+#footer .socials-list a:hover{
+    color: rgba(0,0,0, 0.6);
+}
+#footer .copyright{
+    margin-top:  15px;
+    color: rgba(0,0,0, 0.6);
+    
+}
+#footer .copyright a{
+    color: rgba(0,0,0, 0.6);
+    text-decoration: none;
 }
