@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/thong2085/nodejs_baitap#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
     "handlebars": "^4.7.8",
