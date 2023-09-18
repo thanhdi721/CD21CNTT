@@ -1,18 +1,22 @@
 const newsRouter = require('./news');
-const userRouter = require('./user');
-const authRouter = require('./auth');
+const logoutRouter = require('./logout');
+const loginRouter = require('./login');
+const registerRouter = require('./register');
 const meRouter = require('./me');
 const coursRouter = require('./courses');
 const siteRouter = require('./site');
 
 function route(app) {
+    app.use('/', logoutRouter);
     app.use('/news', newsRouter);
-    app.use('/login', userRouter);
-    // app.use('/', userRouter);
-    app.use('/register', authRouter);
+    app.use('/register', registerRouter);
+    app.use('/login', loginRouter);
+    app.use('/logout', logoutRouter);
+    app.use('/', registerRouter);
     app.use('/courses',coursRouter);
     app.use('/me',meRouter);
-    app.use('/', siteRouter);
+    app.use('/home', siteRouter);
+    app.use('/', loginRouter);
 
 }
 
