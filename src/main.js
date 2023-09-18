@@ -6,6 +6,7 @@ const port = 3000;
 const exphbs = require('express-handlebars');
 const route = require('./routes');
 const methodOverride = require('method-override');
+const session = require('express-session');
 
 const SortMiddleware = require('./app/middlewares/sortMiddleware');
 
@@ -18,6 +19,13 @@ app.use(methodOverride('_method'));
 app.use(SortMiddleware);
  
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session({
+  secret: 'your-secret-key', // Thay đổi thành một khóa bí mật thực tế
+  resave: false,
+  saveUninitialized: true
+}));
+
 
 app.use(express.urlencoded({
   extended: true
