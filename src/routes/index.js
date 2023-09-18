@@ -8,7 +8,7 @@ const siteRouter = require('./site');
 function route(app) {
     app.use('/news', newsRouter);
     app.use('/login', userRouter);
-    app.use('/', userRouter);
+    // app.use('/', userRouter);
     app.use('/register', authRouter);
     app.use('/courses',coursRouter);
     app.use('/me',meRouter);
